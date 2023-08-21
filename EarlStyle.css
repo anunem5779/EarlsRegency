@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s linear; 
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+}
+
+.header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: black;
+    opacity: 0.8;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.466);
+}
+
+.header #logo img{
+    width: 120px;
+    margin-left: 50px;
+    margin-top: 4px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 2px 9px 77px 14px rgba(0,0,0,0.82);
+    -moz-box-shadow: 2px 9px 77px 14px rgba(0,0,0,0.82);
+    box-shadow: 2px 9px 77px 14px rgba(0,0,0,0.82);
+}
+.header .navbar #button{
+    font-size: 18px;
+    margin-left: 10px;
+    color: white;
+    text-align: center;
+    float: left;
+    margin-right: 30px;
+    font-weight: bold;
+}
+.header .navbar #button:hover{
+   color: black;
+}
+
+.main-background{
+    background: url(1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.description {
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(34, 34, 34);
+    opacity: 0.8;
+}
+.description p{
+    color: rgb(58, 57, 57);
+    font-size: 14px;
+    opacity: 0.8;
+    font-family: Arial;
+    word-spacing: 5px;
+    line-height: 19px;
+    letter-spacing: 1px;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 100px;
+}
+.card {
+    width: 325px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    overflow: hidden;
+    transition: transform 0.6s ease;
+    background-color: #dadada81;
+}
+.card:hover {
+    transform: translateY(-20px);
+}
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.card-content {
+    padding: 20px;
+}
+.card-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.card-content p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
